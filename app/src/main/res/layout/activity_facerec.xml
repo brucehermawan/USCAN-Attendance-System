@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faceemr.FaceRec">
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:fontFamily="@font/asap"
+        android:hint="Tanggal"
+        android:inputType="date"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/phototaker"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="185dp"
+        android:background="#2B2B2B"
+        android:backgroundTint="#2F40D6"
+        android:backgroundTintMode="src_atop"
+        android:text="Take Photo"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:iconTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/emotionTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="190dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#2F40D6"
+        android:backgroundTintMode="src_atop"
+        android:text="Status: ?"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:iconTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <Button
+        android:id="@+id/detect"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:layout_weight="1"
+        android:background="#2B2B2B"
+        android:backgroundTint="#2F40D6"
+        android:backgroundTintMode="src_atop"
+        android:text="Detect"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:iconTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phototaker"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="#2B2B2B"
+        android:backgroundTint="#2F40D6"
+        android:backgroundTintMode="src_atop"
+        android:text="Clear"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:iconTintMode="src_atop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detect" />
+
+    <Button
+        android:id="@+id/storeattendance"
+        android:layout_width="210dp"
+        android:layout_height="105dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="72dp"
+        android:background="#2B2B2B"
+        android:backgroundTint="#2F40D6"
+        android:backgroundTintMode="src_atop"
+        android:text="Absensi"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:iconTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.example.uscan.faceemr.SquareImageView
+        android:id="@+id/facialImageView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

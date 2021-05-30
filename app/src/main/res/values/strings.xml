@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">USCAN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="divisi">
+        <item>Keuangan</item>
+        <item>Personalia</item>
+        <item>Produksi</item>
+        <item>Pemasaran</item>
+    </string-array>
+
+    <string-array name="jabatan">
+        <item>Tingkat 1</item>
+        <item>Tingkat 2</item>
+        <item>Tingkat 3</item>
+        <item>Tingkat 4</item>
+        <item>Tingkat 5</item>
+    </string-array>
+
+</resources>

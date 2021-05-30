@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/riwayat_absensi"
+        android:icon="@drawable/ic_riwayatabsensi"
+        android:title="Riwayat Absensi" />
+    <item
+        android:id="@+id/face_recognition"
+        android:icon="@drawable/ic_uscan_clipart"
+        android:title="Face Recognition" />
+    <item
+        android:id="@+id/notifikasi"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifikasi" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu>
